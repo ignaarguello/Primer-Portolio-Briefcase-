@@ -1,0 +1,196 @@
+/* Body */
+
+body{
+    display: flex;
+    background-color: #000;
+}
+
+/* Section Contenedor de los Main */
+#sectionContenedor{
+    display: flex;
+    flex-direction: column;
+    row-gap: 0px;
+}
+
+/* Aside Principal */
+
+#asidePrincipal{
+    border: 3px solid black;
+    width: 13%;
+    height: auto;
+    background-color:#000;
+}
+
+/* Main Principal - 1 */
+
+#mainPrincipal-1{
+    border: 3px solid black;
+    width: 85vw;
+    margin: 0px 5px;
+    height: 100vh;
+    /* background-color: red; */
+}
+
+/* Contenedor Video - Main 1 */
+.Contenedor-Video{
+    background-color: red;
+    height: 100vh;
+}
+
+/* Titulo Principal */
+#Titulo-Principal{
+    color: white;
+    z-index: 2;
+    font-size:70px;
+    position: relative;
+    bottom: 525px;
+    font-family: 'Nunito Sans', sans-serif;
+    letter-spacing: 10px;
+    margin-left: 60px;
+}
+
+/* Titulo Segundario */
+#Titulo-Secundario{
+    color: gray;
+    position: relative;
+    bottom: 550px;
+    margin-left: 50px;
+    font-family: cursive;
+    letter-spacing: 3px;
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+}
+
+/* Titulo About Me */
+
+#Titulo-AboutMe{
+    position: absolute;
+    bottom: 37.5rem;
+    left: 72rem;
+    position: fixed;
+    z-index: 1;
+    padding-bottom: 15px;
+}
+
+#Titulo-AboutMe a{
+    text-decoration: none;
+    color: rgb(182, 53, 53);
+    font-family: 'Oxygen', sans-serif;
+    font-weight:900;
+    letter-spacing: 1.5px;
+    font-size: 1.5rem;
+    position: relative;
+}
+
+#Titulo-AboutMe::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: rgb(182, 53, 53);
+    right: 0;
+    left: 0;
+    bottom: 0;
+    transform-origin: right;
+    transform: scale(0);
+    transition: transform 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+#Titulo-AboutMe:hover::after{
+    transform-origin: left;
+    transform: scale(1);
+    cursor: pointer;
+}
+
+
+/* Main Principal - 2 */
+
+#mainPrincipal-2{
+    border: 3px solid black;
+    width: 85vw;
+    margin: 0px 5px;
+    height: 100vh;
+    background-color:rgb(32, 30, 30);
+}
+
+/* Main Principal - 3 */
+
+#mainPrincipal-3{
+    border: 3px solid black;
+    width: 85vw;
+    margin: 0px 5px;
+    height: 100vh;
+    background-color:rgb(32, 30, 30);
+}
+
+/* Main Principal - 4 */
+
+#mainPrincipal-4{
+    border: 3px solid black;
+    width: 85vw;
+    margin: 0px 5px;
+    height: 100vh;
+    background-color:rgb(32, 30, 30);
+}
+
+/* Lista Principal de Navegacion (En Aside) */
+
+#ListaNavegacionPrincipal{
+    /* border: 1px red dashed; */
+    position: fixed;
+    width: 9.5%;
+    top: 10rem;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* List Item de cada una de las secciones (En Aside) */
+
+#ListaNavegacionPrincipal li{
+    margin: 20px 0px;
+    background-color: rgb(182, 53, 53);
+    padding: 10px;
+    /* border: 1px dashed blue; */
+    color: rgb(182, 53, 53);
+    border-radius: 10px;
+    width: 30px;
+    transition: height 0.7s, width 0.9s;
+}
+
+#ListaNavegacionPrincipal li:hover{
+    color: white;
+    height: 130px; width: 130px;
+}
+
+.LogoNavegacion{
+    height: 30px;
+}
+
+/* Lista De Iteracion de Scroll Vertical para Iterar con Id's */
+
+#ListaDeIteracionDeScrollVertical{
+    list-style: none;
+    cursor: pointer;
+    position: fixed;
+    left: 82rem;
+    top: 18rem;
+    z-index: 5;
+}
+
+/* Href y List Items de la lista de Iteracion de Scroll Vetical */
+
+#ListaDeIteracionDeScrollVertical li{
+    height: 60px;
+}
+
+#ListaDeIteracionDeScrollVertical li a :hover{
+    color: rgb(168, 161, 161);
+}
+
+#ListaDeIteracionDeScrollVertical li a{
+    text-decoration: none;
+    color: rgb(182, 53, 53);
+}
+
